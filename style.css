@@ -1,8 +1,9 @@
 body * {
     /*border: 1px solid;*/
 }
+
 #space {
-	color:white;
+    color: white;
 }
 
 .draggable {
@@ -42,8 +43,8 @@ header {
 }
 
 #getscore {
-	text-align: center;
-	color: red;
+    text-align: center;
+    color: red;
 }
 
 .droppable {

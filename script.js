@@ -1,5 +1,5 @@
 // array
-var drag_drop = [
+var dragdrop = [
         ["#drag1", "pictures/image_part_1.jpg", "drag1", "drop1"],
         ["#drag2", "pictures/image_part_2.jpg", "drag2", "drop2"],
         ["#drag3", "pictures/image_part_3.jpg", "drag3", "drop3"],
@@ -15,20 +15,20 @@ var drag_drop = [
 
     ]
     // filling the divs
-function fill_drag_drop() {
-    for (i = 0; i < drag_drop.length; i++) {
+function fill_dragdrop() {
+    for (i = 0; i < dragdrop.length; i++) {
         var drag = $(".draggable")[i];
-        drag.innerHTML = "<img src='" + drag_drop[i][1] + "' alt='white temple'>";
-        $(drag).attr('id', drag_drop[i][2]);
+        drag.innerHTML = "<img src='" + dragdrop[i][1] + "' alt='white temple'>";
+        $(drag).attr('id', dragdrop[i][2]);
         var drop = $(".droppable")[i];
-        drop.innerHTML = "<img src='" + drag_drop[i][1] + "' alt='white temple'>";
-        $(drop).attr('id', drag_drop[i][3]);
+        drop.innerHTML = "<img src='" + dragdrop[i][1] + "' alt='white temple'>";
+        $(drop).attr('id', dragdrop[i][3]);
 
     } //end of first for loop
 
-} // end function filldrag_drop
+} // end function filldragdrop
 
-fill_drag_drop();
+fill_dragdrop();
 
 // putting the pics in randoms order
 
@@ -44,9 +44,9 @@ random_order();
 
 // drag and drop function
 
-$(drag_drop);
+init_dragdrop();
 
-function drag_drop() {
+function init_dragdrop() {
     $('.draggable').draggable({
         snap: ".droppable",
         cursor: "move",
@@ -59,11 +59,11 @@ function drag_drop() {
     for (i = 0; i < $(".droppable").length; i++) {
 
         $(".droppable").eq(i).droppable({
-            accept: $(drag_drop[i][0]),
+            accept: $(dragdrop[i][0]),
             drop: function(event, ui) {
 
 
-                $(drag_drop[$(this).index()][0]).addClass("dropped");
+                $(dragdrop[$(this).index()][0]).addClass("dropped");
                 var getscore = $("#getscore")[0];
                 if ($(".dropped").length > 11) {
             		getscore.innerHTML = "<div class='alert alert-success'><strong>Congratulations! You solved the puzzle!</strong> Would you like to play again? <a href='index.html'><button type='button' class='btn btn-default'>yes</button></a>"
