@@ -63,15 +63,20 @@ function init_dragdrop() {
             drop: function(event, ui) {
 
 
-                $(dragdrop[$(this).index()][0]).addClass("dropped");
-                var getscore = $("#getscore")[0];
-                if ($(".dropped").length > 11) {
-            		getscore.innerHTML = "<div class='alert alert-success'><strong>Congratulations! You solved the puzzle!</strong> Would you like to play again? <a href='index.html'><button type='button' class='btn btn-default'>yes</button></a>"
-                } else {
-                    getscore.innerHTML = "<div class='alert alert-success'><strong>Yess!</strong> You have " + $(".dropped").length + " out of 12.</div>"
-                } //end if
+                    $(dragdrop[$(this).index()][0]).addClass("dropped");
+                    var getscore1 = $("#getscore1")[0];
+                    var getscore2 = $("#getscore2")[0];
+                    if ($(".dropped").length > 11) {
+                        getscore1.innerHTML = "<div class='alert alert-success'><strong>Congratulations! You solved the puzzle!</strong> Would you like to play again? <a href='index.html'><button type='button' class='btn btn-default'>yes</button></a>"
 
-            } //end function at drop
+                        getscore2.innerHTML = "<div class='alert alert-success'><strong>Congratulations! You solved the puzzle!</strong> Would you like to play again? <a href='index.html'><button type='button' class='btn btn-default'>yes</button></a>"
+                    } else {
+                        getscore1.innerHTML = "<div class='alert alert-success'><strong>Yess!</strong> You have " + $(".dropped").length + " out of 12.</div>"
+
+                        getscore2.innerHTML = "<div class='alert alert-success'><strong>Yess!</strong> You have " + $(".dropped").length + " out of 12.</div>"
+                    } //end if
+
+                } //end function at drop
 
         })
     } //end for loop
