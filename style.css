@@ -1,19 +1,125 @@
-
+body * {
+    /*border: 1px solid;*/
+}
 
 .draggable {
-        /*width: 300px;*/
-        height: 100px;
-        background: lightblue;
-        border-radius:20px;
-        text-align: center;
-        vertical-align: middle;
-        display:inline;
+    width: 100%;
+    height: 100%;
+    background: lightblue;
+    color: white;
+    border: 1px solid;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: url(desaturate.svg#greyscale);
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    border-radius: 10%;
+}
 
-    }
+.draggable:hover {
+    filter: none;
+}
 
-   .droppable {
-   	/*width: 300px;*/
-        height: 100px;
-        border-radius:20px;
-        background: lightgreen;
-   }
+.dropped {
+    filter: none;
+}
+
+#result,
+#puzzlepieces {
+    -webkit-box-shadow: 3px 3px 19px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 19px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 19px -4px rgba(0, 0, 0, 0.75);
+}
+
+header {
+    align-items: middle;
+}
+
+.droppable {
+    width: 100%;
+    height: 100%;
+    color: white;
+    border: 1px solid;
+    opacity: 0.2;
+    background-color: white;
+}
+
+img {
+    width: 100%;
+    opacity: 0;
+}
+
+#drop1,
+#drag1 {
+    background-image: url(pictures/image_part_1.jpg);
+    background-size: 100% 100%;
+}
+
+#drop2,
+#drag2 {
+    background-image: url(pictures/image_part_2.jpg);
+    background-size: 100% 100%;
+}
+
+#drop3,
+#drag3 {
+    background-image: url(pictures/image_part_3.jpg);
+    background-size: 100% 100%;
+}
+
+#drop4,
+#drag4 {
+    background-image: url(pictures/image_part_4.jpg);
+    background-size: 100% 100%;
+}
+
+#drop5,
+#drag5 {
+    background-image: url(pictures/image_part_5.jpg);
+    background-size: 100% 100%;
+}
+
+#drop6,
+#drag6 {
+    background-image: url(pictures/image_part_6.jpg);
+    background-size: 100% 100%;
+}
+
+#drop7,
+#drag7 {
+    background-image: url(pictures/image_part_7.jpg);
+    background-size: 100% 100%;
+}
+
+#drop8,
+#drag8 {
+    background-image: url(pictures/image_part_8.jpg);
+    background-size: 100% 100%;
+}
+
+#drop9,
+#drag9 {
+    background-image: url(pictures/image_part_9.jpg);
+    background-size: 100% 100%;
+}
+
+#drop10,
+#drag10 {
+    background-image: url(pictures/image_part_10.jpg);
+    background-size: 100% 100%;
+}
+
+#drop11,
+#drag11 {
+    background-image: url(pictures/image_part_11.jpg);
+    background-size: 100% 100%;
+}
+
+#drop12,
+#drag12 {
+    background-image: url(pictures/image_part_12.jpg);
+    background-size: 100% 100%;
+}
