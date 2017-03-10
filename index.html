@@ -15,71 +15,81 @@
 </head>
 
 <body>
-   
-    <!-- div#result.col-sm-4.col-sm-offset-1>div.row>(img.col-sm-3.droppable#drop$[src="pictures/image_part_$.jpg"][alt="whitetemple"])*12^^div#puzzlepieces.col-sm-4.col-sm-offset-2>div.row>(img.col-sm-3.draggable#drag$[src="pictures/image_part_$.jpg"][alt="whitetemple"])*12 -->
-
-    
+    <!-- div#result.col-xs-4.col-xs-offset-1>div.row>(img.col-xs-3.droppable#drop$[src="pictures/image_part_$.jpg"][alt="whitetemple"])*12^^div#puzzlepieces.col-xs-4.col-xs-offset-2>div.row>(img.col-xs-3.draggable#drag$[src="pictures/image_part_$.jpg"][alt="whitetemple"])*12 -->
     <div class="container">
-    <div class="row">
-    	<div class="col-sm-12 header"><h1>Puzzle Champion</h1></div>
-    	<div class="col-sm-12 header"><a href="index.html"><button class="btn btn-success">Play Again!</button></a></div>
-    	<div class="col-sm-12 header">d</div>
-    </div>
         <div class="row">
-            <div id="result" class="col-sm-5">
+            <div class="col-xs-12 header">
+                <h1>Puzzle Champion</h1></div>
+            <div class="col-xs-12 header">
+                <a href="index.html">
+                    <button class="btn btn-success">Play Again!</button>
+                </a>
+            </div>
+            <div class="col-xs-12 hidden-xs header alert" id="getscore">
+                <div class="alert alert-info">
+                    <strong>Welcome!</strong> Try to solve the puzzle by putting the pieces on the right side together on the left side.</div>
+            </div>
+            <div class="col-xs-12 visible-xs header alert" id="getscore">
+                <div class="alert alert-info">
+                    <strong>Welcome!</strong> Try to solve the puzzle by putting the pieces in the bottom box together in the top box.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="result" class="col-xs-6 col-sm-5 col-xs-offset-3 col-sm-offset-0">
                 <div class="row">
-                    <div class="col-sm-3 droppable" id="drop1">
-                        <img alt="whitetemple" src="pictures/image_part_1.jpg">
+                    <div class="col-xs-3 droppable">
                     </div>
-                    <div class="col-sm-3 droppable" id="drop2">
-                        <img alt="whitetemple" src="pictures/image_part_2.jpg">
+                    <div class="col-xs-3 droppable">
                     </div>
-                    <div class="col-sm-3 droppable" id="drop3">
-                        <img alt="whitetemple" src="pictures/image_part_3.jpg">
+                    <div class="col-xs-3 droppable">
                     </div>
-                    <div class="col-sm-3 droppable" id="drop4">
-                        <img alt="whitetemple" src="pictures/image_part_4.jpg">
+                    <div class="col-xs-3 droppable">
                     </div>
-                    <div class="col-sm-3 droppable" id="drop5">
-                        <img alt="whitetemple" src="pictures/image_part_5.jpg">
+                    <div class="col-xs-3 droppable">
                     </div>
-                    <div class="col-sm-3 droppable" id="drop6">
-                        <img alt="whitetemple" src="pictures/image_part_6.jpg">
+                    <div class="col-xs-3 droppable">
                     </div>
-                    <div class="col-sm-3 droppable" id="drop7">
-                        <img alt="whitetemple" src="pictures/image_part_7.jpg">
+                    <div class="col-xs-3 droppable">
                     </div>
-                    <div class="col-sm-3 droppable" id="drop8">
-                        <img alt="whitetemple" src="pictures/image_part_8.jpg">
+                    <div class="col-xs-3 droppable">
                     </div>
-                    <div class="col-sm-3 droppable" id="drop9">
-                        <img alt="whitetemple" src="pictures/image_part_9.jpg">
+                    <div class="col-xs-3 droppable">
                     </div>
-                    <div class="col-sm-3 droppable" id="drop10">
-                        <img alt="whitetemple" src="pictures/image_part_10.jpg">
+                    <div class="col-xs-3 droppable">
                     </div>
-                    <div class="col-sm-3 droppable" id="drop11">
-                        <img alt="whitetemple" src="pictures/image_part_11.jpg">
+                    <div class="col-xs-3 droppable">
                     </div>
-                    <div class="col-sm-3 droppable" id="drop12">
-                        <img alt="whitetemple" src="pictures/image_part_12.jpg">
+                    <div class="col-xs-3 droppable">
                     </div>
                 </div>
             </div>
-            <div id="puzzlepieces" class="col-sm-5 col-sm-offset-2">
+            <div id="space" class="col-xs-12 visible-xs">from bottom to top</div>
+            <div id="puzzlepieces" class="col-xs-6 col-sm-5  col-xs-offset-3 col-sm-offset-2">
                 <div class="row">
-                    <div class="col-sm-3 draggable" id="drag1"><img alt="whitetemple" src="pictures/image_part_12.jpg"></div>
-                    <div class="col-sm-3 draggable" id="drag2"><img alt="whitetemple" src="pictures/image_part_12.jpg"></div>
-                    <div class="col-sm-3 draggable" id="drag3"><img alt="whitetemple" src="pictures/image_part_12.jpg"></div>
-                    <div class="col-sm-3 draggable" id="drag4"><img alt="whitetemple" src="pictures/image_part_12.jpg"></div>
-                    <div class="col-sm-3 draggable" id="drag5"><img alt="whitetemple" src="pictures/image_part_12.jpg"></div>
-                    <div class="col-sm-3 draggable" id="drag6"><img alt="whitetemple" src="pictures/image_part_12.jpg"></div>
-                    <div class="col-sm-3 draggable" id="drag7"><img alt="whitetemple" src="pictures/image_part_12.jpg"></div>
-                    <div class="col-sm-3 draggable" id="drag8"><img alt="whitetemple" src="pictures/image_part_12.jpg"></div>
-                    <div class="col-sm-3 draggable" id="drag9"><img alt="whitetemple" src="pictures/image_part_12.jpg"></div>
-                    <div class="col-sm-3 draggable" id="drag10"><img alt="whitetemple" src="pictures/image_part_12.jpg"></div>
-                    <div class="col-sm-3 draggable" id="drag11"><img alt="whitetemple" src="pictures/image_part_12.jpg"></div>
-                    <div class="col-sm-3 draggable" id="drag12"><img alt="whitetemple" src="pictures/image_part_12.jpg"></div>
+                    <div class="col-xs-3 draggable">
+                    </div>
+                    <div class="col-xs-3 draggable">
+                    </div>
+                    <div class="col-xs-3 draggable">
+                    </div>
+                    <div class="col-xs-3 draggable">
+                    </div>
+                    <div class="col-xs-3 draggable">
+                    </div>
+                    <div class="col-xs-3 draggable">
+                    </div>
+                    <div class="col-xs-3 draggable">
+                    </div>
+                    <div class="col-xs-3 draggable">
+                    </div>
+                    <div class="col-xs-3 draggable">
+                    </div>
+                    <div class="col-xs-3 draggable">
+                    </div>
+                    <div class="col-xs-3 draggable">
+                    </div>
+                    <div class="col-xs-3 draggable">
+                    </div>
                 </div>
             </div>
         </div>
