@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Puzzle</title>
+    <!-- style sheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- jquery and bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <!-- div#puzzlepieces.col-xs-5>div.row>(div.col-xs-3.draggable#drag${drag$})*12^^div#result.col-xs-5.col-xs-offset-2>div.row>(div.col-xs-3.droppable#drop${drop$})*12 -->
+    <div class="container">
+        <div class="row">
+            <div id="result" class="col-xs-5">
+                <div class="row">
+                    <div class="col-xs-3 droppable" id="drop1">drop1</div>
+                    <div class="col-xs-3 droppable" id="drop2">drop2</div>
+                    <div class="col-xs-3 droppable" id="drop3">drop3</div>
+                    <div class="col-xs-3 droppable" id="drop4">drop4</div>
+                    <div class="col-xs-3 droppable" id="drop5">drop5</div>
+                    <div class="col-xs-3 droppable" id="drop6">drop6</div>
+                    <div class="col-xs-3 droppable" id="drop7">drop7</div>
+                    <div class="col-xs-3 droppable" id="drop8">drop8</div>
+                    <div class="col-xs-3 droppable" id="drop9">drop9</div>
+                    <div class="col-xs-3 droppable" id="drop10">drop10</div>
+                    <div class="col-xs-3 droppable" id="drop11">drop11</div>
+                    <div class="col-xs-3 droppable" id="drop12">drop12</div>
+                </div>
+            </div>
+            <div id="puzzlepieces" class="col-xs-5 col-xs-offset-2">
+                <div class="row">
+                    <div class="col-xs-3 draggable" id="drag1">drag1</div>
+                    <div class="col-xs-3 draggable" id="drag2">drag2</div>
+                    <div class="col-xs-3 draggable" id="drag3">drag3</div>
+                    <div class="col-xs-3 draggable" id="drag4">drag4</div>
+                    <div class="col-xs-3 draggable" id="drag5">drag5</div>
+                    <div class="col-xs-3 draggable" id="drag6">drag6</div>
+                    <div class="col-xs-3 draggable" id="drag7">drag7</div>
+                    <div class="col-xs-3 draggable" id="drag8">drag8</div>
+                    <div class="col-xs-3 draggable" id="drag9">drag9</div>
+                    <div class="col-xs-3 draggable" id="drag10">drag10</div>
+                    <div class="col-xs-3 draggable" id="drag11">drag11</div>
+                    <div class="col-xs-3 draggable" id="drag12">drag12</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
